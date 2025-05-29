@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Le Gourmet</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <!--Bar de Navigation -->
+    <nav class="navbar navbar-expand-lg  ">
+      <div class="container-fluid">
+        <button class="navbar-toggler active" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#booking">Réservation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="home">
+      <div class="container-fluid mx-auto ">
+        <img src="./img/devant.jpg" class="img-fluid w-100" alt="Devanture">
+
+        <div class="col-lg-12 text-center mt-5 bold">
+          <h1 class="text-decoration-none ">
+            Réserver une table
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="container-fluid">
+      <div class="col-12 col-lg-6 col-md-12 mx-auto mt-5">
+        <form >
+          <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Téléphone</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone" required>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="mb-3">
+            <label for="time" class="form-label">Heure</label>
+            <input type="time" class="form-control" id="time" required>
+          </div>
+          <div class="mb-3">
+            <label for="guests" class="form-label">Nombre de personnes</label>
+            <input type="number" class="form-control" id="guests" min="1" placeholder="Entrez le nombre de personnes"
+              required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message (optionnel)</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Ajoutez un message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Réserver</button>
+        </form>
+      </div>
+      <div class="col-lg-12 text-center mt-5 bold">
+        <h1 class="text-decoration-none ">
+          Plat du jour
+        </h1>
+      </div>
+    </section>
+
+
+    <section id="menu" class="container mx-auto">
+      <div class="row mt-5">
+        <div class="col-4">
+          <div class="card">
+            <img src="./img/Oeuf-en-meurette-1.jpg" class="card-img-top img-fluid " alt="Oeuf-en-meurette">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Entrée</h5>
+              <h5 class="card-title text-center">Oeuf en meurette</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                voluptatibu Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img src="./img/Lagneau-de-region-anis-de-Flavigny.jpg" class="card-img-top img-fluid "
+              alt="Lagneau-de-region-anis-de-Flavigny">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Plat</h5>
+              <h5 class="card-title text-center">L'agneau de region anis de Flavigny</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                voluptatibus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img src="./img/Croquant-meringue.jpg" class="card-img-top img-fluid " alt="Croquant-meringue">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Dessert</h5>
+              <h5 class="card-title text-center">Croquant meringue</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                voluptatibus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center mt-5 bold">
+          <h1 class="text-decoration-none ">
+            Contactez-nous
+          </h1>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact" class="container">
+      <div class="row mt-5">
+        <div class="col-6">
+          <h2 class="text-center">
+            Formulaire de Contact
+          </h2>
+          <form class="border border-black rounded p-5">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message (optionnel)</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Ajoutez un message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+
+        </div>
+        <div class="col-6">
+          <img src="./img/contact_us.jpg" alt="contact_us" class="img-fluid">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-5 container">
+    <div class="row">
+
+
+      <div class="col-6 col-md-2 mb-3">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">18 avenue de Paris</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">13003 Marseille</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">CGV</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">CGU</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Mention Légale</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contactez nous</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form class="border border-black rounded p-5 " >
+          <h5>Rejoignez la newsletter</h5>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Rejoindre</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2025 Dawan, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24"
+              height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
+              height="24" aria-hidden="true">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
